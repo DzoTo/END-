@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 @Setter
 @RequiredArgsConstructor
 public class AccountTypeId {
-    private String accountType;
+    private AccountType accountType;
     private String clientID;
 }

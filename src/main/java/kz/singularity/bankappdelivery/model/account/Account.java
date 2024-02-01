@@ -14,7 +14,7 @@ public class Account {
     private AccountType accountType;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
     private String clientID;
     private double balance;

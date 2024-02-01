@@ -46,7 +46,7 @@ public class AccountController {
     }
     @PostMapping("/accounts")
     public void createAccount(@RequestBody AccountTypeId dto){
-        accountBasicCLI.createAccountRequest(AccountType.valueOf(dto.getAccountType()), dto.getClientID());
+        accountBasicCLI.createAccountRequest(dto.getAccountType(), dto.getClientID());
     }
 
     @PostMapping("/accounts/{account_id}/withdraw")
